@@ -23,13 +23,13 @@ const members: Member[] = [
     role: "Lead Guitar",
     bio: "Thành viên sáng lập band nhạc #3thégear. Xuất hiện ấn tượng cùng những câu solo guitar đậm vibe của chất nhạc Mỹ thập niên 80-90.",
     image: "/img/Phiên pro5.jpg",
-    imageClass: "object-cover object-top transform scale-110",
+    imageClass: "object-cover object-top",
   },
   {
     name: "Zahrah Châu Huyên",
     role: "Vocal",
     bio: "Giọng hát song ngữ giàu cảm xúc luôn giữ nhịp cho khán phòng từ ballad, rock đến những bản EDM bùng cháy.",
-    image: "/img/bands-8.jpg",
+    image: "/img/zahrah pro5.jpg",
   },
   {
     name: "Nhật Huy",

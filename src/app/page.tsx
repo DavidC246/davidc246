@@ -24,7 +24,7 @@ import {
   HeartIcon,
 } from "@heroicons/react/24/solid";
 import heroImage from "../../public/img/aaa.jpg";
-import benefitOneImage from "../../public/img/bands-6.jpg";
+import benefitOneImage from "../../public/img/Band cóđào.jpg";
 import benefitTwoImage from "../../public/img/bands-5.jpg";
 
 const heroContent = {

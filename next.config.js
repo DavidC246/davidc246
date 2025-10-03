@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-    },
-  };
-  
-  module.exports = nextConfig;
-  
+  images: {
+    domains: ['img.youtube.com'],
+  },
+  experimental: {
+  },
+};
+
+module.exports = nextConfig;
+

@@ -21,7 +21,7 @@ export const heroData = {
 const benefitOne = {
   title: "Vì sao khách hàng chọn David C Music",
   desc: "Luôn có phương án phù hợp dù bạn tổ chức tiệc cưới, gala hay festival. Chúng tôi kết hợp kinh nghiệm sân khấu và quy trình làm việc rõ ràng.",
-  image: "/img/bands-6.jpg",
+  image: "/img/Band cóđào.jpg",
   bullets: [
     {
       title: "Setlist cá nhân hóa",
