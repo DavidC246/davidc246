@@ -7,31 +7,47 @@ type Member = {
   role: string;
   bio: string;
   image: string;
+  imageClass?: string;
 };
 
 const members: Member[] = [
   {
     name: "David C",
-    role: "Lead Vocal & Guitar",
-    bio: "Thành viên sáng lập, phụ trách phối khí và kết nối khách hàng. Sở trường pop, R&B và rock acoustic.",
-    image: "/img/bands-2.jpg",
+    role: "Bassist",
+    bio: "Thành viên sáng lập band nhạc #3thégear, quyết định nhịp tim và huyết áp của khán giả. Sở trường pop, funky, soft rock và EDM rock.",
+    image: "/img/David pro5.jpg",
+    imageClass: "object-cover object-top",
   },
   {
-    name: "Mai Anh",
-    role: "Lead Vocal nữ",
-    bio: "Giọng ca nội lực từng vào Top 6 The Voice, đảm nhận các bản hit tiếng Anh và mashup EDM.",
-    image: "/img/bands-4.jpg",
+    name: "Lam Phiên",
+    role: "Lead Guitar",
+    bio: "Thành viên sáng lập band nhạc #3thégear. Xuất hiện ấn tượng cùng những câu solo guitar đậm vibe của chất nhạc Mỹ thập niên 80-90.",
+    image: "/img/Phiên pro5.jpg",
+    imageClass: "object-cover object-top transform scale-110",
   },
   {
-    name: "Hoàng Phúc",
-    role: "Keyboard & Music Director",
-    bio: "Producer đứng sau các bản phối live, giữ liên lạc với kỹ thuật âm thanh và điều phối rehearsal.",
-    image: "/img/bands-3.jpg",
+    name: "Zahrah Châu Huyên",
+    role: "Vocal",
+    bio: "Giọng hát song ngữ giàu cảm xúc luôn giữ nhịp cho khán phòng từ ballad, rock đến những bản EDM bùng cháy.",
+    image: "/img/bands-8.jpg",
   },
   {
-    name: "Quang Huy",
+    name: "Nhật Huy",
+    role: "Vocal",
+    bio: "Giọng ca tràn đầy năng lượng, giàu chất rock với quãng giọng rộng, luôn bơm căng không khí khán phòng bởi kỹ năng MC hype tuyệt vời.",
+    image: "/img/bands-6.jpg",
+  },
+  {
+    name: "Minh Huy",
+    role: "Synthesizer",
+    bio: "Linh hồn của những lớp synth và ambient, tạo texture điện tử, trigger sample và hỗ trợ khán phòng nhóm lửa trong các set EDM nonstop.",
+    image: "/img/Minh Huy vest pr5.jpg",
+    imageClass: "object-cover object-top",
+  },
+  {
+    name: "Minh Thanh",
     role: "Drums & Percussion",
-    bio: "10 năm kinh nghiệm sân khấu festival, sẵn sàng mở rộng dàn trống hybrid cho trap/EDM set.",
+    bio: "Khuấy động sân khấu và đốt sạch lượng bia của khán phòng bởi rhythm chắc nịch cùng những cú vung dùi uy lực.",
     image: "/img/bands-7.jpg",
   },
 ];
@@ -53,7 +69,7 @@ export const BandMembers = () => {
                   alt={member.name}
                   fill
                   sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover"
+                  className={member.imageClass ?? "object-cover"}
                 />
               </div>
               <div className="p-6 space-y-2">

@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Truong Sanh Cu?ng",
-  description: "D?nh hu?ng kinh doanh nh? nh�ng, chuy�n nghi?p.",
+  title: "Trương Sanh Cường",
+  description: "Định hướng kinh doanh nhỏ nhưng chuyên nghiệp.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi" className="light" suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable} bg-white text-gray-900 antialiased font-sans`}>
+      <body className={`${inter.variable} ${playfair.variable} bg-black text-white antialiased font-sans`}>
         <ClientLayout>{children}</ClientLayout>
         <Footer />
       </body>

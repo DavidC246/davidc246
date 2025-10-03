@@ -1,5 +1,5 @@
 ﻿import { Metadata } from 'next';
-import { UXChecklist } from '@/components/UXChecklist';
+import UXChecklist from '@/components/UXChecklist';
 
 export const metadata: Metadata = {
   title: 'UX Checklist | David C Music',

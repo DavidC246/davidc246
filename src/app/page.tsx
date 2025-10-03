@@ -23,32 +23,32 @@ import {
   SpeakerWaveIcon,
   HeartIcon,
 } from "@heroicons/react/24/solid";
-import heroImage from "../../public/img/bands-1.jpg";
+import heroImage from "../../public/img/aaa.jpg";
 import benefitOneImage from "../../public/img/bands-6.jpg";
 import benefitTwoImage from "../../public/img/bands-5.jpg";
 
 const heroContent = {
-  title: "David C Music - Live band cho mỗi khoảnh khắc",
+  title:
+    "Từ sân khấu đến phòng tập, từ biểu diễn đến chăm sóc nhạc cụ David C Music luôn bên bạn.",
   intro:
-    "Ban nhạc live với dàn vocalist, nhạc công và ekip production đồng hành từ rehearsal tới đêm diễn.",
+    "Chúng tôi mang đến dịch vụ âm nhạc trọn gói, chuyên nghiệp và giàu cảm xúc:",
   descriptions: [
-    "Chúng tôi mang đến những setlist giàu năng lượng, khả năng tương tác cùng khách mời và kinh nghiệm sản xuất cho cả sân khấu lớn lẫn sự kiện thân mật.",
-    "Đặt band là đặt một ekip production đồng hành: từ phối khí, rehearsal đến điều phối timeline cùng bạn.",
+    "Ban nhạc sự kiện",
+    "Cho thuê thiết bị âm thanh, ánh sáng, nhạc cụ",
   ],
   ctaPrimary: {
-    label: "Đặt lịch ngay",
-    href: "mailto:3thegear.pt@gmail.com",
+    label: "Liên hệ tư vấn",
+    href: "mailto:truongsanhcuong246@gmail.com",
   },
   ctaSecondary: {
-    label: "Gửi yêu cầu booking",
+    label: "Đặt lịch biểu diễn",
     href: "#booking",
   },
 };
 
 const heroHighlights = [
-  "Nhạc sống cho lễ cưới, gala, festival và private party.",
-  "Timeline, rider và rehearsal rõ ràng cho từng chương trình.",
-  "Hỗ trợ truyền thông với media kit, clip highlight sau show.",
+  "Hướng dẫn nhạc cụ 1 kèm 1 (online & offline)",
+  "Spa nhạc cụ - chăm sóc & bảo dưỡng chuyên nghiệp",
 ];
 
 const benefitsContent = [
@@ -111,31 +111,34 @@ export default function HomePage() {
     <>
       <Navbar />
 
-      <section id="hero" className="bg-gradient-to-b from-white to-slate-50">
-        <Container className="flex flex-col-reverse items-center gap-12 py-16 lg:flex-row lg:py-24">
-          <div className="w-full space-y-6 lg:w-1/2">
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-amber-500">
+      <section id="hero" className="bg-black text-white">
+        <Container className="flex flex-col-reverse items-center gap-12 py-16 lg:flex-row lg:items-start lg:justify-between lg:gap-20 lg:py-24">
+          <div className="w-full max-w-xl space-y-6 lg:w-1/2 lg:space-y-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-amber-300">
               Live band • Wedding • Corporate • Festival
             </p>
-            <h1 className="font-serif text-4xl leading-tight text-gray-900 md:text-5xl">
+            <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
               {heroContent.title}
             </h1>
-            <p className="font-sans text-lg leading-relaxed text-gray-600">
+            <p className="font-sans text-lg leading-relaxed text-white/80">
               {heroContent.intro}
             </p>
-            {heroContent.descriptions.map((text) => (
-              <p key={text} className="font-sans text-base leading-relaxed text-gray-600">
-                {text}
-              </p>
-            ))}
-            <ul className="space-y-2 text-sm text-gray-600">
-              {heroHighlights.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span className="mt-2 h-2 w-2 rounded-full bg-amber-500" />
-                  <span>{item}</span>
-                </li>
+            <div className="font-sans space-y-3 text-base leading-relaxed text-white/80">
+              {heroContent.descriptions.map((text) => (
+                <p key={text} className="flex items-start gap-2">
+                  <span className="mt-1 text-amber-300">•</span>
+                  <span>{text}</span>
+                </p>
               ))}
-            </ul>
+            </div>
+            <div className="font-sans space-y-3 text-base leading-relaxed text-white/80">
+              {heroHighlights.map((item) => (
+                <p key={item} className="flex items-start gap-2">
+                  <span className="mt-1 text-amber-300">•</span>
+                  <span>{item}</span>
+                </p>
+              ))}
+            </div>
             <div className="flex flex-col gap-3 pt-4 sm:flex-row sm:items-center">
               <a
                 href={heroContent.ctaPrimary.href}
@@ -145,26 +148,29 @@ export default function HomePage() {
               </a>
               <a
                 href={heroContent.ctaSecondary.href}
-                className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-gray-700 transition hover:border-amber-400 hover:text-amber-500"
+                className="inline-flex items-center justify-center rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-neutral-900 shadow-lg shadow-amber-500/40 transition hover:bg-amber-400"
               >
                 {heroContent.ctaSecondary.label}
               </a>
             </div>
-            <div className="text-sm text-gray-500">
-              <span className="font-semibold text-gray-700">Hotline:</span>{' '}
-              <a href="tel:+84965528281" className="font-semibold text-amber-600 hover:text-amber-500">
-                +84 96 552 82 81
+            <p className="text-base text-white/70">
+              Liên hệ ngay để được tư vấn và trải nghiệm dịch vụ tốt nhất.
+            </p>
+            <div className="text-base text-white/70">
+              <span className="font-semibold text-white">Hotline:</span>{' '}
+              <a href="tel:+84349537373" className="font-semibold text-amber-300 hover:text-amber-200">
+                034 953 7373
               </a>
               <span className="mx-2 text-gray-300">•</span>
-              <span className="font-semibold text-gray-700">Email:</span>{' '}
-              <a href="mailto:3thegear.pt@gmail.com" className="font-semibold text-amber-600 hover:text-amber-500">
-                3thegear.pt@gmail.com
+              <span className="font-semibold text-white">Email:</span>{' '}
+              <a href="mailto:truongsanhcuong246@gmail.com" className="font-semibold text-amber-300 hover:text-amber-200">
+                truongsanhcuong246@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="flex w-full justify-center lg:w-1/2">
-            <div className="relative aspect-[4/5] w-full max-w-xl overflow-hidden rounded-3xl bg-neutral-900 shadow-2xl shadow-black/25 ring-1 ring-black/10">
+          <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
+            <div className="relative aspect-[4/5] w-full max-w-xl overflow-hidden rounded-3xl bg-neutral-900 shadow-2xl shadow-amber-500/20 ring-1 ring-amber-500/20">
               <Image
                 src={heroImage}
                 alt="David C Music biểu diễn live cùng ban nhạc"

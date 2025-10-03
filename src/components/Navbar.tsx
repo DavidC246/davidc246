@@ -5,7 +5,7 @@ import { Disclosure } from '@headlessui/react';
 
 const navigation = [
   { label: 'Trang chủ', href: '/#hero' },
-  { label: 'Giới thiệu', href: '/about' },
+  { label: 'Band nhạc', href: '/about' },
   { label: 'Dịch vụ', href: '/#services' },
   { label: 'Bộ sưu tập', href: '/gallery' },
   { label: 'Liên hệ công việc', href: '/contact' },
@@ -14,7 +14,7 @@ const navigation = [
 export const Navbar = () => {
   return (
     <div className="w-full sticky top-0 z-[1000] bg-black text-white">
-      <nav className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-5">
+      <nav className="flex items-center justify-between px-4 md:px-8 lg:px-12 py-5">
         <Link href="/" className="flex flex-col">
           <span className="text-2xl font-bold tracking-[0.18em] uppercase">DAVID C MUSIC</span>
           <span className="mt-1 text-sm text-gray-400 whitespace-nowrap">
@@ -37,7 +37,7 @@ export const Navbar = () => {
             href="/#booking"
             className="ml-8 inline-flex items-center justify-center px-5 py-2.5 text-sm lg:text-base font-semibold uppercase tracking-[0.12em] bg-amber-500 text-black rounded-full shadow-xl shadow-amber-500/40 hover:bg-amber-600"
           >
-            Đặt lịch ban nhạc
+            Book
           </Link>
         </div>
 

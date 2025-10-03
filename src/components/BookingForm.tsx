@@ -10,7 +10,7 @@ export const BookingForm = () => {
 
       <Container>
         <div className="max-w-3xl mx-auto bg-neutral-900/60 border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl shadow-black/40">
-          <form className="grid gap-6" method="post" action="mailto:3thegear.pt@gmail.com">
+        <form className="grid gap-6" method="post" action="mailto:truongsanhcuong246@gmail.com">
             <div className="grid gap-2">
               <label htmlFor="name" className="text-xs font-semibold uppercase tracking-[0.24em] text-white/70">
                 Họ tên

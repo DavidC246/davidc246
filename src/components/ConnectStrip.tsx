@@ -35,7 +35,7 @@ export const ConnectStrip = () => {
               Bao gồm logo vector, profile, rider âm thanh ánh sáng và hình ảnh độ phân giải cao.
             </p>
             <a
-              href="mailto:3thegear.pt@gmail.com?subject=Yeu%20cau%20press%20kit%20David%20C%20Music"
+              href="mailto:truongsanhcuong246@gmail.com?subject=Yeu%20cau%20press%20kit%20David%20C%20Music"
               className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-amber-300 hover:text-amber-200"
             >
               <GlobeAltIcon className="w-5 h-5" />
@@ -51,14 +51,14 @@ export const ConnectStrip = () => {
             <div className="mt-2 space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <EnvelopeIcon className="w-5 h-5 text-amber-300" />
-                <a href="mailto:3thegear.pt@gmail.com" className="font-semibold text-white hover:text-amber-200">
-                  3thegear.pt@gmail.com
+                <a href="mailto:truongsanhcuong246@gmail.com" className="font-semibold text-white hover:text-amber-200">
+                  truongsanhcuong246@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <MusicalNoteIcon className="w-5 h-5 text-amber-300" />
-                <a href="tel:+84965528281" className="font-semibold text-white hover:text-amber-200">
-                  +84 96 552 82 81
+                <a href="tel:+84349537373" className="font-semibold text-white hover:text-amber-200">
+                  034 953 7373
                 </a>
               </div>
             </div>

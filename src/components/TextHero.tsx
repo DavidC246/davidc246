@@ -22,10 +22,10 @@ export const TextHero = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
             >
-              Sunset Sounds Festival
+              Grill and Chill Night Concert
               <br />
               <span className="text-base md:text-lg font-sans tracking-[0.24em] uppercase text-gray-500">
-                27 tháng 7, 2025 · Bãi biển Mũi Né, Việt Nam
+                30 tháng 9, 2025 · Bãi biển Mũi Né, Việt Nam
               </span>
             </motion.p>
           </div>
@@ -38,7 +38,7 @@ export const TextHero = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5, duration: 0.8, ease: 'easeOut' }}
           >
-            Gặp gỡ David C Music tại <strong>Sunset Sounds Festival</strong> mùa hè này! Một đêm nhạc bùng nổ với ánh sáng rực rỡ và khán giả cuồng nhiệt. Dù bạn đã từng đồng hành cùng chúng tôi hay mới nghe lần đầu, đây sẽ là trải nghiệm khó quên.
+            Gặp gỡ David C Music tại <strong>Grill and Chill Night Concert</strong> mùa thu này! Một đêm nhạc bùng nổ với ánh sáng rực rỡ và khán giả cuồng nhiệt. Dù bạn đã từng đồng hành cùng chúng tôi hay mới nghe lần đầu, đây sẽ là trải nghiệm khó quên.
           </motion.p>
 
           <motion.p
@@ -56,7 +56,7 @@ export const TextHero = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.7, duration: 0.8, ease: 'easeOut' }}
           >
-            Sunset Sounds Festival - Sân khấu chính, 21:00
+            Grill and Chill Night Concert - Sân khấu chính, 21:00
           </motion.p>
 
           <motion.p

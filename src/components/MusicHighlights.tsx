@@ -21,7 +21,7 @@ export const MusicHighlights = () => {
             <div className="relative w-full aspect-video bg-black">
               <iframe
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/JGwWNGJdvx8?rel=0"
+                src="https://www.youtube.com/embed/1CgMGWtUOxo?rel=0"
                 title="David C Music live highlight"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -31,19 +31,18 @@ export const MusicHighlights = () => {
 
           <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl shadow-black/10 flex flex-col justify-between space-y-6">
             <div className="space-y-3">
-              <h3 className="font-serif text-2xl text-gray-900">Playlist Spotify - Top lựa chọn cho sự kiện</h3>
+              <h3 className="font-serif text-2xl text-gray-900">Live session - David C Music Acoustic</h3>
               <p className="font-sans text-base leading-relaxed text-gray-600">
-                Tuyển tập 15 ca khúc cover nổi bật, cập nhật hằng tháng theo phản hồi của khách hàng.
+                Ghi hình trực tiếp với đội hình acoustic, phù hợp cho các sự kiện ấm cúng và không gian lounge.
               </p>
             </div>
-            <div>
+            <div className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden">
               <iframe
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4dyzvuaRJ0n?utm_source=generator"
-                width="100%"
-                height="380"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                title="David C Music playlist"
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/YO0nMGGDBGw?rel=0"
+                title="David C Music acoustic session"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>

@@ -16,7 +16,7 @@ export const Cta = () => {
           </div>
           <div className="flex-shrink-0 w-full text-center lg:w-auto">
             <a
-              href="mailto:3thegear.pt@gmail.com"
+              href="mailto:truongsanhcuong246@gmail.com"
               className="inline-flex items-center justify-center px-7 lg:px-10 py-3 lg:py-4 text-sm lg:text-base font-semibold uppercase tracking-[0.16em] bg-white text-neutral-900 rounded-full shadow-lg shadow-black/20 hover:bg-amber-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 transition"
             >
               Gửi yêu cầu ngay

@@ -14,7 +14,7 @@ export const heroData = {
   description2:
     "Đặt band là đặt một ekip production đồng hành: từ phối khí, rehearsal đến điều phối timeline cùng bạn.",
   image: "/img/bands-1.jpg",
-  ctaLink: "mailto:3thegear.pt@gmail.com",
+  ctaLink: "mailto:truongsanhcuong246@gmail.com",
   ctaText: "Đặt lịch ngay",
 };
 

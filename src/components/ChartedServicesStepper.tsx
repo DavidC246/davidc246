@@ -29,7 +29,7 @@ const steps: Step[] = [
   {
     title: 'Private party & lounge',
     description:
-      'Phiên bản acoustic/duo cho rooftop, nhà hàng hoặc yacht party. Không gian thân mật với những bản cover nhẹ nhàng, nhận yêu cầu bài riêng và tương tác cùng khách mời.',
+      'Phiên bản acoustic/band theo yêu cầu cho rooftop, nhà hàng hoặc du thuyền party. Không gian thân mật, riêng tư với những bản cover nhẹ nhàng, nhận yêu cầu bài riêng và tương tác cùng khách mời.',
   },
 ];
 
