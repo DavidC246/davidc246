@@ -12,77 +12,8 @@ env:
   IMAGE_TAR: davidc.tar.gz
 
 jobs:
-  build:
-    name: Build Next.js app
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run lint
-        run: npm run lint
-        continue-on-error: true
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload production build
-        uses: actions/upload-artifact@v4
-        with:
-          name: next-build
-          path: |
-            .next
-            package.json
-            package-lock.json
-            public
-
   deploy:
-    name: Deploy to Vercel
-    needs: build
     runs-on: ubuntu-latest
-    if: ${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Download production build
-        uses: actions/download-artifact@v4
-        with:
-          name: next-build
-          path: .
-
-      - name: Deploy with Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: npx vercel deploy --prebuilt --prod
-
-  deploy_vps:
-    name: Deploy to VPS
-    needs: build
-    runs-on: ubuntu-latest
-    if: ${{ secrets.VPS_HOST != '' && secrets.VPS_USER != '' && secrets.VPS_SSH_KEY != '' }}
 
     steps:
       - name: Checkout repository
